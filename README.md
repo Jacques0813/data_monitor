@@ -8,6 +8,6 @@ Things you will need:
 1. NTPClient by Fabrice Weinberg
 2. PubSubClient by Nick O'leary
 3. Wifi by Arduino
-4. Arduinjson by Benoit Blanchon
+4. Arduinojson by Benoit Blanchon
 
 Instructions on how to setup further is in the video : https://youtu.be/c1STB1mDN0M
