@@ -10,4 +10,4 @@ Things you will need:
 3. Wifi by Arduino
 4. Arduinjson by Benoit Blanchon
 
-Instructions on how to setup further is in the video
+Instructions on how to setup further is in the video : https://youtu.be/c1STB1mDN0M
