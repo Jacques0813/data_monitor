@@ -1,0 +1,2120 @@
+[
+    {
+        "id": "597efdbb6c64e024",
+        "type": "tab",
+        "label": "UAV 2023",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7ee360c1aa8df99d",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt://broker.emqx.io",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "ae39e9c2ae952833",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e3b2e6a4ad93eab1",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "a4efa1741aca5f69",
+        "type": "ui_group",
+        "name": "Potentiometer",
+        "tab": "ae39e9c2ae952833",
+        "order": 1,
+        "disp": true,
+        "width": 20,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "af3fb0baccd6da48",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "26ee081a8859d33b",
+        "type": "ui_group",
+        "name": "Fuel and Battery Data",
+        "tab": "14bc1d55706f74cb",
+        "order": 3,
+        "disp": true,
+        "width": 30,
+        "collapse": false
+    },
+    {
+        "id": "af346428be71a452",
+        "type": "ui_group",
+        "name": "Motor Data",
+        "tab": "14bc1d55706f74cb",
+        "order": 4,
+        "disp": true,
+        "width": 30,
+        "collapse": false
+    },
+    {
+        "id": "7cc42f0d3ecb371e",
+        "type": "ui_group",
+        "name": "Motor Power Difference",
+        "tab": "14bc1d55706f74cb",
+        "order": 2,
+        "disp": true,
+        "width": 23,
+        "collapse": false
+    },
+    {
+        "id": "2e7d31a9ce1664ce",
+        "type": "ui_group",
+        "name": "Controls",
+        "tab": "14bc1d55706f74cb",
+        "order": 1,
+        "disp": true,
+        "width": 7,
+        "collapse": false
+    },
+    {
+        "id": "14bc1d55706f74cb",
+        "type": "ui_tab",
+        "name": "Data2",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "160e81fb.f1c86e",
+        "type": "ui_group",
+        "name": "File Browser",
+        "tab": "b63d1f91.68095",
+        "order": 1,
+        "disp": true,
+        "width": "18",
+        "collapse": false
+    },
+    {
+        "id": "b63d1f91.68095",
+        "type": "ui_tab",
+        "name": "Files",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "efc07a2a6b61e970",
+        "type": "ui_group",
+        "name": "Battery",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": 7,
+        "collapse": false
+    },
+    {
+        "id": "15227e4e0db2b323",
+        "type": "ui_group",
+        "name": "Motor",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": 7,
+        "collapse": false
+    },
+    {
+        "id": "2e0f49d85d518d6d",
+        "type": "ui_group",
+        "name": "Controls",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 7,
+        "collapse": false
+    },
+    {
+        "id": "debdc7ec23f3bae6",
+        "type": "ui_group",
+        "name": "Fuel Data",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": 7,
+        "collapse": false
+    },
+    {
+        "id": "a52424348ab800c7",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.emqx.io",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "a631453b94b724f1",
+        "type": "ui_group",
+        "name": "Fuel & Battery",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "30",
+        "collapse": false
+    },
+    {
+        "id": "be472e017610f697",
+        "type": "ui_group",
+        "name": "Motors",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "30",
+        "collapse": false
+    },
+    {
+        "id": "0ac2afe10bfdaadc",
+        "type": "ui_group",
+        "name": "Motor Delta",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": 23,
+        "collapse": false
+    },
+    {
+        "id": "297c8c514371db0e",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "5758996b8337ed9a",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "5758996b8337ed9a",
+        "type": "ui_tab",
+        "name": "Tab 1",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d44a8ce96afbbdd8",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "2e7d31a9ce1664ce",
+        "order": 1,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "ed309e9e8e32d430",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "2e7d31a9ce1664ce",
+        "order": 3,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "c57a8c51515bb318",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "2e7d31a9ce1664ce",
+        "order": 5,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "34fd7452944f56a9",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "26ee081a8859d33b",
+        "order": 1,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "0e63a64e0324b285",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "26ee081a8859d33b",
+        "order": 4,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "af613f144d28ecdb",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "26ee081a8859d33b",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e07df61c6f9e0c97",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "26ee081a8859d33b",
+        "order": 9,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "7c675a4dc493ee81",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "26ee081a8859d33b",
+        "order": 10,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "aedf954dbdb5383a",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "26ee081a8859d33b",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ae207147e7f4ce9b",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "26ee081a8859d33b",
+        "order": 12,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "f239657fdc6ee3ba",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "26ee081a8859d33b",
+        "order": 13,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "a754d0ba09363466",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "26ee081a8859d33b",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e7d91623a25a2476",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "26ee081a8859d33b",
+        "order": 15,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "e4ca3a726ec346bd",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "26ee081a8859d33b",
+        "order": 16,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "1a61eebc6f7f5369",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "26ee081a8859d33b",
+        "order": 17,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ac2d945a7dbde83e",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "26ee081a8859d33b",
+        "order": 18,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "bc878ddca1181427",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "26ee081a8859d33b",
+        "order": 19,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "519f969a95bcaa33",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "26ee081a8859d33b",
+        "order": 20,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e2e141849a53a663",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "26ee081a8859d33b",
+        "order": 24,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "31628168c997530a",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "26ee081a8859d33b",
+        "order": 26,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "552041d4b2cd8866",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "26ee081a8859d33b",
+        "order": 27,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b1c7cf05799abb77",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "26ee081a8859d33b",
+        "order": 28,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5793bad7c0a87fb9",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "26ee081a8859d33b",
+        "order": 29,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "38796f550f76fce7",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "af346428be71a452",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "908c5d5d0de43593",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "af346428be71a452",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "186e4ab9c3152fc9",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "af346428be71a452",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "aa5286e36abd281e",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "af346428be71a452",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a6dcd12fb052cba1",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "af346428be71a452",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "87a426d890abd0f7",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "af346428be71a452",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "91960a47dff1728f",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "af346428be71a452",
+        "order": 17,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d777e792f342492d",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "af346428be71a452",
+        "order": 18,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "181c69b6d80dd965",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "af346428be71a452",
+        "order": 19,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "961f5e615ae0f48b",
+        "type": "ui_spacer",
+        "z": "597efdbb6c64e024",
+        "name": "spacer",
+        "group": "af346428be71a452",
+        "order": 20,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d3815a3c5ceba67f",
+        "type": "ui_tab",
+        "name": "File Name",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6a60a1dd18ef157d",
+        "type": "ui_group",
+        "name": "File Change",
+        "tab": "d3815a3c5ceba67f",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "318e07923c8c6e70",
+        "type": "mqtt in",
+        "z": "597efdbb6c64e024",
+        "name": "esp32/Data",
+        "topic": "esp32/Data",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "a52424348ab800c7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 90,
+        "y": 480,
+        "wires": [
+            [
+                "0dd33648ee1a5275",
+                "77861d85dace42a0"
+            ]
+        ]
+    },
+    {
+        "id": "0dd33648ee1a5275",
+        "type": "function",
+        "z": "597efdbb6c64e024",
+        "name": "Split values",
+        "func": "var payload = msg.payload;\nvar values = payload.split(\"#\");   \n    var dictionary = {\n        flow: values[0],\n        fuelCapacity: values[1],\n        fanVoltage: values[2],\n        fanCurrent: values[3],\n        fanPower: values[4],\n        fanTemp: values[5],\n        engineVoltage: values[6],\n        engineCurrent: values[7],\n        enginePower: values[8],\n        engineTemp: values[9],\n        batteryVoltage: values[10],\n        batteryCurrent: values[11],\n        batteryPower: values[12],\n        batteryTemp: values[13],\n    };\nmsg.payload = dictionary;\n//global.set('data', dictionary);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 480,
+        "wires": [
+            [
+                "93ac9005bbf4dce3",
+                "a1e354a2174fce81",
+                "0db7ae85be0508b9",
+                "4d9e022e115e225a",
+                "fdd6d7771b744d59",
+                "20fd3e42a70a66bf",
+                "8038026a79f2bf6f",
+                "661a7b321b46b2f8",
+                "781b9eeded956f8d",
+                "932b00c4e00c882e",
+                "fbba2c36f2fb13aa",
+                "9b3f206ab63e9126",
+                "053fb59a95cd939e",
+                "0993ff3835fd1917",
+                "8c30f9a7cf51a3b5",
+                "322f2460dad7fab5",
+                "a33ae7628412e3e2",
+                "6bbf04379fb21550",
+                "0f728d41296618b9",
+                "62d688e7aa7211ef",
+                "18a4ab703a1d3182",
+                "92aa8661c6a523e6",
+                "2fdc6334fcdd284e",
+                "82f036c5a544564d",
+                "7e795fa332a44471",
+                "eeca327bf7fa1879",
+                "d66aa6b916f17910",
+                "0487611ad00805d6",
+                "4c451b7058b0995b",
+                "e34a74f27a6471fc",
+                "7a62cea3b30696dc"
+            ]
+        ]
+    },
+    {
+        "id": "93ac9005bbf4dce3",
+        "type": "ui_gauge",
+        "z": "597efdbb6c64e024",
+        "name": "Fuel Flow",
+        "group": "26ee081a8859d33b",
+        "order": 2,
+        "width": 3,
+        "height": 5,
+        "gtype": "gage",
+        "title": "Fuel Flow",
+        "label": "units",
+        "format": "{{msg.payload.flow}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 980,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "a1e354a2174fce81",
+        "type": "ui_gauge",
+        "z": "597efdbb6c64e024",
+        "name": "Fuel Capacity",
+        "group": "26ee081a8859d33b",
+        "order": 3,
+        "width": 3,
+        "height": 5,
+        "gtype": "wave",
+        "title": "Fuel Capacity",
+        "label": "%",
+        "format": "{{msg.payload.fuelCapacity}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1000,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "a9cfe5245c315e18",
+        "type": "ui_chart",
+        "z": "597efdbb6c64e024",
+        "name": "Fuel Data",
+        "group": "26ee081a8859d33b",
+        "order": 21,
+        "width": 13,
+        "height": 5,
+        "label": "Fuel Data",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "40",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 1240,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0db7ae85be0508b9",
+        "type": "ui_gauge",
+        "z": "597efdbb6c64e024",
+        "name": "Motor Fan Voltage",
+        "group": "af346428be71a452",
+        "order": 1,
+        "width": 3,
+        "height": 5,
+        "gtype": "gage",
+        "title": "Motor Fan Voltage",
+        "label": "units",
+        "format": "{{msg.payload.fanVoltage}}",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1010,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "4d9e022e115e225a",
+        "type": "ui_gauge",
+        "z": "597efdbb6c64e024",
+        "name": "Motor Fan Current",
+        "group": "af346428be71a452",
+        "order": 2,
+        "width": 3,
+        "height": 5,
+        "gtype": "gage",
+        "title": "Motor  Fan Current",
+        "label": "units",
+        "format": "{{msg.payload.fanCurrent}}",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1010,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "fdd6d7771b744d59",
+        "type": "ui_gauge",
+        "z": "597efdbb6c64e024",
+        "name": "Motor Fan Power",
+        "group": "af346428be71a452",
+        "order": 12,
+        "width": 3,
+        "height": 5,
+        "gtype": "gage",
+        "title": "Motor Fan Power",
+        "label": "units",
+        "format": "{{msg.payload.fanPower}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1010,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "92aa8661c6a523e6",
+        "type": "ui_gauge",
+        "z": "597efdbb6c64e024",
+        "name": "Motor Fan Temp",
+        "group": "af346428be71a452",
+        "order": 13,
+        "width": 3,
+        "height": 5,
+        "gtype": "donut",
+        "title": "Motor Fan Temp",
+        "label": "°C",
+        "format": "{{msg.payload.fanTemp}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1000,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "20fd3e42a70a66bf",
+        "type": "ui_gauge",
+        "z": "597efdbb6c64e024",
+        "name": "Motor Engine Voltage",
+        "group": "af346428be71a452",
+        "order": 5,
+        "width": 3,
+        "height": 5,
+        "gtype": "gage",
+        "title": "Motor Engine Voltage",
+        "label": "units",
+        "format": "{{msg.payload.engineVoltage}}",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1020,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "8038026a79f2bf6f",
+        "type": "ui_gauge",
+        "z": "597efdbb6c64e024",
+        "name": "Motor Engine Current",
+        "group": "af346428be71a452",
+        "order": 6,
+        "width": 3,
+        "height": 5,
+        "gtype": "gage",
+        "title": "Motor Engine Current",
+        "label": "units",
+        "format": "{{msg.payload.engineCurrent}}",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1020,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "661a7b321b46b2f8",
+        "type": "ui_gauge",
+        "z": "597efdbb6c64e024",
+        "name": "Motor Engine Power",
+        "group": "af346428be71a452",
+        "order": 15,
+        "width": 3,
+        "height": 5,
+        "gtype": "gage",
+        "title": "Motor Engine Power",
+        "label": "units",
+        "format": "{{msg.payload.enginePower}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1020,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "781b9eeded956f8d",
+        "type": "ui_gauge",
+        "z": "597efdbb6c64e024",
+        "name": "Motor Engine Temp",
+        "group": "af346428be71a452",
+        "order": 16,
+        "width": 3,
+        "height": 5,
+        "gtype": "donut",
+        "title": "Motor Engine Temp",
+        "label": "°C",
+        "format": "{{msg.payload.engineTemp}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1010,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "423152560f09ceb9",
+        "type": "ui_chart",
+        "z": "597efdbb6c64e024",
+        "name": "Motor Power Split - Graph",
+        "group": "7cc42f0d3ecb371e",
+        "order": 1,
+        "width": 23,
+        "height": 8,
+        "label": "Motor Power Split",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 1270,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "053fb59a95cd939e",
+        "type": "ui_gauge",
+        "z": "597efdbb6c64e024",
+        "name": "Battery Voltage",
+        "group": "26ee081a8859d33b",
+        "order": 5,
+        "width": 3,
+        "height": 5,
+        "gtype": "gage",
+        "title": "Battery Voltage",
+        "label": "units",
+        "format": "{{msg.payload.batteryVoltage}}",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1000,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "0993ff3835fd1917",
+        "type": "ui_gauge",
+        "z": "597efdbb6c64e024",
+        "name": "Battery Current",
+        "group": "26ee081a8859d33b",
+        "order": 6,
+        "width": 3,
+        "height": 5,
+        "gtype": "gage",
+        "title": "Battery Current",
+        "label": "units",
+        "format": "{{msg.payload.batteryCurrent}}",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1000,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "8c30f9a7cf51a3b5",
+        "type": "ui_gauge",
+        "z": "597efdbb6c64e024",
+        "name": "Battery Power",
+        "group": "26ee081a8859d33b",
+        "order": 23,
+        "width": 3,
+        "height": 5,
+        "gtype": "gage",
+        "title": "Battery Power",
+        "label": "units",
+        "format": "{{msg.payload.batteryPower}}",
+        "min": 0,
+        "max": "1300",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1000,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "322f2460dad7fab5",
+        "type": "ui_gauge",
+        "z": "597efdbb6c64e024",
+        "name": "Battery Temp",
+        "group": "26ee081a8859d33b",
+        "order": 22,
+        "width": 3,
+        "height": 5,
+        "gtype": "donut",
+        "title": "Battery Temp",
+        "label": "units",
+        "format": "{{msg.payload.batteryTemp}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 990,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "8044adc5824643a5",
+        "type": "ui_chart",
+        "z": "597efdbb6c64e024",
+        "name": "Battery Power - Graph",
+        "group": "26ee081a8859d33b",
+        "order": 25,
+        "width": 10,
+        "height": 5,
+        "label": "Battery Power",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1500",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 1260,
+        "y": 1220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "407d69a8d474fe8f",
+        "type": "ui_chart",
+        "z": "597efdbb6c64e024",
+        "name": "Motor Engine Data",
+        "group": "af346428be71a452",
+        "order": 7,
+        "width": 9,
+        "height": 10,
+        "label": "Motor Engine Data",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 1270,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "906fe5f29f1e43c0",
+        "type": "ui_chart",
+        "z": "597efdbb6c64e024",
+        "name": "Battery Data",
+        "group": "26ee081a8859d33b",
+        "order": 8,
+        "width": 10,
+        "height": 5,
+        "label": "Battery Data",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1500",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 1290,
+        "y": 1320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "932b00c4e00c882e",
+        "type": "function",
+        "z": "597efdbb6c64e024",
+        "name": "Convert payload and topic",
+        "func": "msg.payload = msg.payload.flow;\nmsg.topic = \"Fuel Capacity\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 220,
+        "wires": [
+            [
+                "a9cfe5245c315e18"
+            ]
+        ]
+    },
+    {
+        "id": "fbba2c36f2fb13aa",
+        "type": "function",
+        "z": "597efdbb6c64e024",
+        "name": "Convert payload and topic",
+        "func": "msg.payload = msg.payload.enginePower;\nmsg.topic = \"Engine_Power\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 980,
+        "wires": [
+            [
+                "423152560f09ceb9"
+            ]
+        ]
+    },
+    {
+        "id": "9b3f206ab63e9126",
+        "type": "function",
+        "z": "597efdbb6c64e024",
+        "name": "Convert payload and topic",
+        "func": "msg.payload = msg.payload.fanPower;\nmsg.topic = \"Fan_Power\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 1020,
+        "wires": [
+            [
+                "423152560f09ceb9"
+            ]
+        ]
+    },
+    {
+        "id": "a33ae7628412e3e2",
+        "type": "function",
+        "z": "597efdbb6c64e024",
+        "name": "Convert payload and topic",
+        "func": "msg.payload = msg.payload.batteryPower;\nmsg.topic = \"Battery Power\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 1220,
+        "wires": [
+            [
+                "8044adc5824643a5"
+            ]
+        ]
+    },
+    {
+        "id": "6bbf04379fb21550",
+        "type": "function",
+        "z": "597efdbb6c64e024",
+        "name": "Convert payload and topic",
+        "func": "msg.payload = msg.payload.batteryVoltage;\nmsg.topic = \"Battery Voltage\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 1260,
+        "wires": [
+            [
+                "906fe5f29f1e43c0"
+            ]
+        ]
+    },
+    {
+        "id": "0f728d41296618b9",
+        "type": "function",
+        "z": "597efdbb6c64e024",
+        "name": "Convert payload and topic",
+        "func": "msg.payload = msg.payload.batteryCurrent;\nmsg.topic = \"Battery Current\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 1300,
+        "wires": [
+            [
+                "906fe5f29f1e43c0"
+            ]
+        ]
+    },
+    {
+        "id": "62d688e7aa7211ef",
+        "type": "function",
+        "z": "597efdbb6c64e024",
+        "name": "Convert payload and topic",
+        "func": "msg.payload = msg.payload.batteryPower;\nmsg.topic = \"Battery Power\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 1340,
+        "wires": [
+            [
+                "906fe5f29f1e43c0"
+            ]
+        ]
+    },
+    {
+        "id": "18a4ab703a1d3182",
+        "type": "function",
+        "z": "597efdbb6c64e024",
+        "name": "Convert payload and topic",
+        "func": "msg.payload = msg.payload.batteryTemp;\nmsg.topic = \"Battery Temp\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 1380,
+        "wires": [
+            [
+                "906fe5f29f1e43c0"
+            ]
+        ]
+    },
+    {
+        "id": "77861d85dace42a0",
+        "type": "debug",
+        "z": "597efdbb6c64e024",
+        "name": "debug 9",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 300,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "2fdc6334fcdd284e",
+        "type": "function",
+        "z": "597efdbb6c64e024",
+        "name": "Convert payload and topic",
+        "func": "msg.payload = msg.payload.fanVoltage;\nmsg.topic = \"Fan Voltage\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 500,
+        "wires": [
+            [
+                "527b49f542285ac4"
+            ]
+        ]
+    },
+    {
+        "id": "82f036c5a544564d",
+        "type": "function",
+        "z": "597efdbb6c64e024",
+        "name": "Convert payload and topic",
+        "func": "msg.payload = msg.payload.fanCurrent;\nmsg.topic = \"Fan Current\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 540,
+        "wires": [
+            [
+                "527b49f542285ac4"
+            ]
+        ]
+    },
+    {
+        "id": "7e795fa332a44471",
+        "type": "function",
+        "z": "597efdbb6c64e024",
+        "name": "Convert payload and topic",
+        "func": "msg.payload = msg.payload.fanPower;\nmsg.topic = \"Fan Power\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 580,
+        "wires": [
+            [
+                "527b49f542285ac4"
+            ]
+        ]
+    },
+    {
+        "id": "eeca327bf7fa1879",
+        "type": "function",
+        "z": "597efdbb6c64e024",
+        "name": "Convert payload and topic",
+        "func": "msg.payload = msg.payload.fanTemp;\nmsg.topic = \"Fan Temp\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 620,
+        "wires": [
+            [
+                "527b49f542285ac4"
+            ]
+        ]
+    },
+    {
+        "id": "d66aa6b916f17910",
+        "type": "function",
+        "z": "597efdbb6c64e024",
+        "name": "Convert payload and topic",
+        "func": "msg.payload = msg.payload.engineVoltage;\nmsg.topic = \"Engine Voltage\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 820,
+        "wires": [
+            [
+                "407d69a8d474fe8f"
+            ]
+        ]
+    },
+    {
+        "id": "0487611ad00805d6",
+        "type": "function",
+        "z": "597efdbb6c64e024",
+        "name": "Convert payload and topic",
+        "func": "msg.payload = msg.payload.engineCurrent;\nmsg.topic = \"Engine Current\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 860,
+        "wires": [
+            [
+                "407d69a8d474fe8f"
+            ]
+        ]
+    },
+    {
+        "id": "4c451b7058b0995b",
+        "type": "function",
+        "z": "597efdbb6c64e024",
+        "name": "Convert payload and topic",
+        "func": "msg.payload = msg.payload.enginePower;\nmsg.topic = \"Fan Power\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 900,
+        "wires": [
+            [
+                "407d69a8d474fe8f"
+            ]
+        ]
+    },
+    {
+        "id": "e34a74f27a6471fc",
+        "type": "function",
+        "z": "597efdbb6c64e024",
+        "name": "Convert payload and topic",
+        "func": "msg.payload = msg.payload.engineTemp;\nmsg.topic = \"Engine Temp\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 940,
+        "wires": [
+            [
+                "407d69a8d474fe8f"
+            ]
+        ]
+    },
+    {
+        "id": "7413e53cce54d8cc",
+        "type": "comment",
+        "z": "597efdbb6c64e024",
+        "name": "One input to reduce network traffic",
+        "info": "",
+        "x": 140,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "96736abbbfddb3ae",
+        "type": "comment",
+        "z": "597efdbb6c64e024",
+        "name": "Graphs need separate payloads and topics when comparing multiple values",
+        "info": "",
+        "x": 1440,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "2696668a57977d47",
+        "type": "mqtt in",
+        "z": "597efdbb6c64e024",
+        "name": "esp32/time",
+        "topic": "esp32/time",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "a52424348ab800c7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 1340,
+        "wires": [
+            [
+                "7cf9998419c6246c",
+                "f0479f310fa5a0fd"
+            ]
+        ]
+    },
+    {
+        "id": "f0479f310fa5a0fd",
+        "type": "function",
+        "z": "597efdbb6c64e024",
+        "name": "Set Filepath",
+        "func": "// var filename = '/home/psu/google-drive/Data/' + msg.payload + '.csv';\nvar filename = 'Downloads\\\\' + msg.payload + '.csv';\nglobal.set('filename', filename);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 1260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7cf9998419c6246c",
+        "type": "debug",
+        "z": "597efdbb6c64e024",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "7a62cea3b30696dc",
+        "type": "function",
+        "z": "597efdbb6c64e024",
+        "name": "For large data",
+        "func": "//var values = global.get('data');\nvar now = new Date();\nvar timestamp = Date.now();\nconst options = {hour: 'numeric', minute: 'numeric', second: 'numeric', millisecond: 'numeric'}\nvar date = new Date(timestamp);\nmsg.payload = {\n    'timestamp': now.getTime(),\n    'currentTime': date.toLocaleTimeString([], options),\n    'flow' : msg.payload.flow, \n    'fuelCapacity' : msg.payload.fuelCapacity, \n    'fanVoltage' : msg.payload.fanVoltage, \n    'fanCurrent' : msg.payload.fanCurrent, \n    'fanPower' : msg.payload.fanPower, \n    'fanTemp' : msg.payload.fanTemp, \n    'engineVoltage' : msg.payload.engineVoltage, \n    'engineCurrent' : msg.payload.engineCurrent, \n    'enginePower' : msg.payload.enginePower, \n    'engineTemp' : msg.payload.engineTemp, \n    'batteryVoltage' : msg.payload.batteryVoltage, \n    'batteryCurrent' : msg.payload.batteryCurrent, \n    'batteryPower' : msg.payload.batteryPower, \n    'batteryTemp' : msg.payload.batteryTemp };\nif (global.get('oldFile') != global.get('filename')) {\n    msg.reset = true;\n} \nmsg.filename = global.get('filename');\nglobal.set('oldFile', msg.filename);\nif ((msg.filename != null) && (msg.filename != undefined)) {\n    return msg;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 660,
+        "wires": [
+            [
+                "4799d1c8c6c05101"
+            ]
+        ]
+    },
+    {
+        "id": "4799d1c8c6c05101",
+        "type": "csv",
+        "z": "597efdbb6c64e024",
+        "name": "CSV",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "once",
+        "multi": "one",
+        "ret": "\\r\\n",
+        "temp": "timestamp,currentTime,flow,fuelCapacity,fanVoltage,fanCurrent,fanPower,fanTemp,engineVoltage,engineCurrent,enginePower,engineTemp,batteryVoltage,batteryCurrent,batteryPower,batteryTemp",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": false,
+        "include_null_values": false,
+        "x": 450,
+        "y": 820,
+        "wires": [
+            [
+                "7735b23a9af35e19"
+            ]
+        ]
+    },
+    {
+        "id": "7735b23a9af35e19",
+        "type": "file",
+        "z": "597efdbb6c64e024",
+        "name": "write to file",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "utf8",
+        "x": 570,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "527b49f542285ac4",
+        "type": "ui_chart",
+        "z": "597efdbb6c64e024",
+        "name": "Motor Fan Data",
+        "group": "af346428be71a452",
+        "order": 3,
+        "width": 8,
+        "height": 10,
+        "label": "Motor Fan Data",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1500",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 1280,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f962219ae1cc6cea",
+        "type": "ui_form",
+        "z": "597efdbb6c64e024",
+        "name": "",
+        "label": "",
+        "group": "6a60a1dd18ef157d",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Change File Name",
+                "value": "File Path",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "File Path": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "str",
+        "splitLayout": "",
+        "x": 90,
+        "y": 1040,
+        "wires": [
+            [
+                "4a710863ed023158"
+            ]
+        ]
+    },
+    {
+        "id": "4a710863ed023158",
+        "type": "function",
+        "z": "597efdbb6c64e024",
+        "name": "Set Filepath",
+        "func": "// var filename = '/home/psu/google-drive/Data/' + msg.payload + '.csv';\nvar filename = '\\\\Downloads\\\\' + msg.payload[\"File Path\"] + '.csv';\nglobal.set('newFile', filename);\nmsg.filename = global.get('filename');\nif ((msg.filename != null) && (msg.filename != undefined)) {\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 230,
+        "y": 980,
+        "wires": [
+            [
+                "0d1c98a64dd8ad2a"
+            ]
+        ]
+    },
+    {
+        "id": "0d1c98a64dd8ad2a",
+        "type": "debug",
+        "z": "597efdbb6c64e024",
+        "name": "debug 14",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "1a14ead06066764e",
+        "type": "comment",
+        "z": "597efdbb6c64e024",
+        "name": "If you want to change file path via GUI form",
+        "info": "",
+        "x": 260,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "3810e4e1f32c003d",
+        "type": "comment",
+        "z": "597efdbb6c64e024",
+        "name": "Connect esp32/time to \"Set Filepath\" if you want to use reset button on esp32",
+        "info": "",
+        "x": 390,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "969cf49da0ebe994",
+        "type": "debug",
+        "z": "597efdbb6c64e024",
+        "name": "debug 12",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "0cb694e9e80bc159",
+        "type": "function",
+        "z": "597efdbb6c64e024",
+        "name": "Get power state",
+        "func": "var message = msg.payload;\nvar m = {'State': message};\nreturn {payload:m};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 180,
+        "wires": [
+            [
+                "969cf49da0ebe994",
+                "3cbcbe9126e9feb8"
+            ]
+        ]
+    },
+    {
+        "id": "3cbcbe9126e9feb8",
+        "type": "mqtt out",
+        "z": "597efdbb6c64e024",
+        "name": "On/off",
+        "topic": "esp32/Start",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "a52424348ab800c7",
+        "x": 590,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "a807c7c1d004976e",
+        "type": "ui_button",
+        "z": "597efdbb6c64e024",
+        "name": "",
+        "group": "2e7d31a9ce1664ce",
+        "order": 2,
+        "width": 7,
+        "height": 1,
+        "passthru": false,
+        "label": "On",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "60",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 90,
+        "y": 140,
+        "wires": [
+            [
+                "0cb694e9e80bc159"
+            ]
+        ]
+    },
+    {
+        "id": "a02a86dbbf02dad1",
+        "type": "ui_button",
+        "z": "597efdbb6c64e024",
+        "name": "",
+        "group": "2e7d31a9ce1664ce",
+        "order": 4,
+        "width": 7,
+        "height": 1,
+        "passthru": false,
+        "label": "Off",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "30",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 90,
+        "y": 220,
+        "wires": [
+            [
+                "0cb694e9e80bc159"
+            ]
+        ]
+    },
+    {
+        "id": "398fd6e827aedf9e",
+        "type": "ui_slider",
+        "z": "597efdbb6c64e024",
+        "name": "Servo slider",
+        "label": "Servo position",
+        "tooltip": "",
+        "group": "2e7d31a9ce1664ce",
+        "order": 6,
+        "width": 7,
+        "height": 3,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "25",
+        "step": "1",
+        "x": 110,
+        "y": 60,
+        "wires": [
+            [
+                "c00c848e5f69807e"
+            ]
+        ]
+    },
+    {
+        "id": "c00c848e5f69807e",
+        "type": "function",
+        "z": "597efdbb6c64e024",
+        "name": "Set Voltage value",
+        "func": "var message = msg.payload;\nvar m = { 'Position': message};\nreturn { payload: m };\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 60,
+        "wires": [
+            [
+                "969cf49da0ebe994",
+                "7eb886288a766d8b"
+            ]
+        ]
+    },
+    {
+        "id": "7eb886288a766d8b",
+        "type": "mqtt out",
+        "z": "597efdbb6c64e024",
+        "name": "SliderVal",
+        "topic": "esp32/Slider",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "a52424348ab800c7",
+        "x": 580,
+        "y": 60,
+        "wires": []
+    }
+]
